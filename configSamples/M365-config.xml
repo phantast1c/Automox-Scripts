@@ -1,0 +1,23 @@
+<!--
+O365 Enterprise
+Exclude Skype for Business Lync and Groove
+Force app shutdown
+-->
+
+<Configuration>
+  <Info Description="" />
+  <Add OfficeClientEdition="64" Channel="Current" MigrateArch="TRUE">
+    <Product ID="O365ProPlusRetail">
+      <Language ID="en-us" />
+      <Language ID="MatchPreviousMSI" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Updates Enabled="TRUE" />
+  <Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
