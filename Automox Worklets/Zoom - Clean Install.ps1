@@ -1,5 +1,13 @@
-# Zoom Installer Cleanup
+<#
+  .SYNOPSIS
+      Zoom - Clean Install
+  .DESCRIPTION
+      Cleanup existing Zoom installation and Install latest Zoom with your company as default SSO and enable auto updates
+  .NOTES
+      Modify the parameters as needed
+#>
 
+# Parameters
 $zoomSSOHost = 'company.zoom.us'
 $cleanZoomUri = 'https://assets.zoom.us/docs/msi-templates/CleanZoom.zip'
 $zoomX64Uri = 'https://zoom.us/client/latest/ZoomInstallerFull.msi?archType=x64'
