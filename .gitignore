@@ -1,4 +1,4 @@
 *.private
+*.private.*
 payloads/
 private/
-Umbrella Cert/
